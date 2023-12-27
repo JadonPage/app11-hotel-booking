@@ -25,6 +25,11 @@ class Hotel:
     def get_hotel_count(cls, data):
         return len(data)
 
+    def __eq__(self, other):
+        if self.hotel_id == other.hotel_id:
+            return True
+        else:
+            return False
 
 
 class Ticket:
